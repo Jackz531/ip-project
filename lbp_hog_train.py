@@ -52,7 +52,7 @@ class FaceDataset(Dataset):
 X_features = []
 y_labels = []
 
-data_dir = 'C:/Users/jayag/Desktop/ip_project/facedataset'
+data_dir = os.path.join(os.getcwd(),'facedataset')
 dataset = FaceDataset(data_dir)
 
 num_images_to_show = len(dataset)
